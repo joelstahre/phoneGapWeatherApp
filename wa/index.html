@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Required meta viewport tag. Do not modify this! -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  
+  <title>Weather App</title>
+
+  <link rel="shortcut icon" href="favicon.png"/>
+
+  <link rel="stylesheet" href="lib/css/base.css">
+  <link rel="stylesheet" href="lib/css/action-bars.css">
+  <link rel="stylesheet" href="lib/css/chevrons.css">
+  <link rel="stylesheet" href="lib/css/tabs.css">
+  <link rel="stylesheet" href="lib/css/content.css">
+  <link rel="stylesheet" href="lib/css/buttons.css">
+  <link rel="stylesheet" href="lib/css/forms.css">
+  <link rel="stylesheet" href="lib/css/lists.css">
+  <link rel="stylesheet" href="lib/css/spinners.css">
+  <link rel="stylesheet" href="lib/css/icomoon.css">
+  <link rel="stylesheet" href="lib/css/stack.css">
+  <link rel="stylesheet" href="lib/css/sliders.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body ontouchstart="">
+
+  <!-- All your pages must be wrapped in a div.page so that stack.js works -->
+  <div class="page">
+
+    <header class="action-bar fixed-top">
+      <a href="#item2" data-ignore="true" class="app-icon action up">
+      	<i class="chevron"></i>
+        <i class="icon-location-target"></i>
+      </a>
+      
+      <h1 class="title"><span id="city"></span></h1>
+      
+      <!-- Add action buttons here -->
+
+    </header>
+    <nav class="tab-fixed">
+    	<ul class="tab-inner">
+            <li class="active"><a href="#item1" data-ignore="true">Today</a></li>
+            <li><a href="#item2" data-ignore="true">Position</a></li>
+            <li><a href="#item3" data-ignore="true">Extended</a></li>
+    	</ul>
+  	</nav>
+
+    <div class="content">
+		<div class="slider">
+      	<ul>
+        	<li id="item1" class="tab-item active">
+          	<div class="inset">
+            	<div id="weatherData">
+                	<div id="weatherDataInnerTop">
+                        <h2>TODAY</h2>
+                        <p><span id="date"></span></p>
+                        
+                        <div id="middleDiv">
+                            <div id="symbol">
+                                <img src="" id="icon">
+                            </div>
+                            <div id="tempInfo">
+                                <span id="temp"></span>
+                                <div id="maxMin">
+                                	<span id="maxTemp"></span><span id="minTemp"></span>
+                                </div>															
+                            </div>
+                        </div>
+                        <div id="descriptionDiv">
+	                        <p><span id="description"></span></p>
+                    	</div>
+                    </div>
+                    
+                    <div id="weatherDataInnerBottomLeft">
+                    	<p class="weatherDataBottomP">Humidity</p>
+                        <span id="humidity"></span>
+                    </div>
+                    <div id="weatherDataInnerBottomRight">
+                    	<p class="weatherDataBottomP">Wind</p>
+                        <span id="wind"></span>
+                    </div>
+                    
+                    
+                </div>
+         	</div>
+        	</li>
+
+        	<li id="item2" class="tab-item">
+        	<form class="inset">
+                <label>Add Location</label>
+    			<input id="searchField" name="location" class="input-text">
+                <div class="form-actions">
+                    <button id="submitBTN" type="submit" class="btn btn-block">Sök</button>
+                    <button id="locationBTN" type="submit" class="btn btn-block">My pos</button>
+                </div>
+    		</form>
+        	</li>
+
+        	<li id="item3" class="tab-item">
+          	<div class="inset">
+            	<h3>Day 1</h3>
+          			<span id="date1"></span>
+          			<img src="" id="icon1">
+          			<span id="description1"></span>
+
+        		<h3>Day 2</h3>
+          			<span id="date2"></span>
+          			<img src="" id="icon2">
+          			<span id="description2"></span>
+
+        			<h3>Day 3</h3>
+          				<span id="date3"></span>
+          				<img src="" id="icon3">
+          				<span id="description3"></span>
+       		 </li>
+      	</ul>
+    	</div>
+    </div>
+  </div>
+
+  <!-- Scripts at the bottom -->
+  <script src="lib/js/stack.js"></script>
+  <script src="lib/js/action-bars.js"></script>
+  <script src="lib/js/spinners.js"></script>
+  <script src="lib/js/tabs.js"></script>
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/weather.js" type="text/javascript"></script>
+<script type="text/javascript" src="/target/target-script-min.js#b80e6ad8-d690-11e2-a306-22000a98b3d6"></script></body>
+
+</html>

@@ -1,0 +1,93 @@
+/* CSS Document */
+
+body{
+	font-size:1em;	
+}
+
+
+.hidden {
+	display: none;
+}
+
+#loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+
+#weatherData {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;	
+}
+
+#weatherData p{
+	padding:0;
+	margin:0;
+}
+
+#weatherDataInnerTop h2 {
+	font-size: 1.875em;
+	color: #33B5E5;
+	line-height: 35px;
+}
+
+#date {
+	font-size: 0.750em;
+}
+
+
+#middleDiv{
+	width:100%;
+	margin-top: 30px;
+	overflow: auto;
+}
+
+#symbol, #tempInfo{
+	width:50%;
+	float:left;
+}
+
+
+#temp {
+	font-size:3.750em;
+	color:#33B5E5;
+	display:block;
+	line-height: 60px;
+}
+
+#maxMin{
+	font-weight: bold;
+}
+
+#descriptionDiv {
+	margin: 20px 0 30px 0;
+	font-weight: bold;
+	font-size: 1.563em;
+}
+
+
+#weatherDataInnerBottomLeft {
+	width:50%;
+	float:left;
+}
+
+#weatherDataInnerBottomLeft span {
+	font-weight:bold;
+}
+
+#weatherDataInnerBottomRight span {
+	font-weight:bold;
+}
+.weatherDataBottomP {
+	color: #33B5E5;
+	font-weight: bold;
+}
+
+
+
+#weatherDataInnerBottomRight {
+	width: 50%;
+	float:left;
+}
